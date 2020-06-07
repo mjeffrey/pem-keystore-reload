@@ -1,0 +1,6 @@
+server:
+  port: 8080
+  ssl:
+    key-store: 'classpath:SET-ME/keystore.properties'
+    key-store-type: PEMCFG.MOD  # Needs .MOD (for tomcat)
+    enabled: true
