@@ -34,9 +34,9 @@ Otherwise build with maven and run from the command line
 mvn clean install
 java -jar  ./target/pem-0.0.1-SNAPSHOT.jar --server.ssl.key-store=file:certs/qwac/keystore.properties
 ``` 
-To test it you can copy the pem files in certs/qwac1 onto certs/qwac 
-Then you can check the cert deployed with:
+To test it you can copy the pem files in certs/qwac1 and certs/qwac2 onto certs/qwac 
 
+You can check the cert deployed with:
 `openssl s_client  -connect localhost:8080 </dev/null 2>/dev/null | grep 'subject='`
 
 ## Possible Issues
